@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"
-import styles from './styles.css'
+import './styles.css'
 
 export const metadata = {
   title: "My Title",

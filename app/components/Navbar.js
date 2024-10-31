@@ -1,12 +1,15 @@
-import { AppBar, Toolbar, Button} from '@mui/material'
+'use client'
+
+import { AppBar, Toolbar } from '@mui/material'
+import NavbarButton from './NavbarButton'
 
 export default function Navbar() {
   return (
-    <AppBar sx={{ bgcolor: "green" }} position="static">
+    <AppBar position="static" sx={{ bgcolor: "green" }}>
       <Toolbar>
-        <Button color="inherit">Home</Button>
-        <Button color="inherit">Forum</Button>
-        <Button sx={{ marginLeft: "auto" }} color="inherit">Login</Button>
+        <NavbarButton href="/">Home</NavbarButton>
+        <NavbarButton href="/forum" active>Forum</NavbarButton>
+        <NavbarButton href="/login" align="right">Login</NavbarButton>
       </Toolbar>
     </AppBar>
   )
